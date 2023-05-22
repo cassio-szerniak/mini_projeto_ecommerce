@@ -1,8 +1,9 @@
 # Projeto de E-commerce ↓
-"""
-estoque = {}  #Armazenar dados do meu sistema
 
-for i in range(2):
+estoque = {}  #Armazenar dados do meu sistema
+quantidade_a_cadastrar = int(input("Digite a quantidade de produtos a serem cadastrados: "))
+
+for i in range(quantidade_a_cadastrar):
     codigo = int(input("Digite o codigo do produto: "))
     categoria = (input("Digite o categoria do produto: "))
     nome = (input("Digite o nome do produto: "))
@@ -19,7 +20,7 @@ for i in range(2):
     else: # senão, caso a categoria já exista, apenas obtem os valores
         estoque[categoria].append(produto)
 
-print(estoque)"""
+print(estoque)
 
 # print ( codigo, "\n", categoria, "\n", nome, "\n", descricao, "\n", preco)
 
@@ -54,22 +55,21 @@ print(estoque)"""
 
 # EXIBINDO CADA CATEGORIA E OS PRODUTOS DENTRO DELA ↓
 
-estoque = {'Livros': [
-            {'codigo': 12, 'produto': 'Harry Potter', 'info': 'lalala', 'preco': 45.89}], 
+estoque = {'Livros': [{'codigo': 12, 'produto': 'Harry Potter', 'info': 'lalala', 'preco': 45.89}], 
            'Eletronicos': [
             {'codigo': 23, 'produto': 'Smartphone', 'info': 'lalala', 'preco': 999.1}]}
 
-print("\n \n------------------------------------")
-print("-------INFORMAÇÕES DO PRODUTO-------")
-print("------------------------------------")
+# print("\n \n------------------------------------")
+# print("-------INFORMAÇÕES DO PRODUTO-------")
+# print("------------------------------------")
 
-for categoria in estoque:
-    for produto in estoque[categoria]:
-        print(f"PRODUTO: {produto['produto']}")
-        print(f"Código: {produto['codigo']}")
-        print(f"Categoria: {categoria}")
-        print(f"Nome: {produto['produto']}")
-        print(f"Descrição: {produto['info']}")
-        print(f"Preço: {produto['preco']}")
-        print("")
+# for categoria in estoque:
+#     for produto in estoque[categoria]:
+#         print(f"PRODUTO: {produto['produto']}")
+#         print(f"Código: {produto['codigo']}")
+#         print(f"Categoria: {categoria}")
+#         print(f"Nome: {produto['produto']}")
+#         print(f"Descrição: {produto['info']}")
+#         print(f"Preço: {produto['preco']}")
+#         print("")
 # fim
